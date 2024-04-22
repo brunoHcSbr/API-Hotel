@@ -12,12 +12,14 @@ export default class User extends BaseEntity {
 
   @Column()
   userNick!: string
+  
+  @Column()
+  password!: string
 
   @Column()
   job!: string
 
-  @Column()
-  password!: string
+  
 
   @OneToMany(() => Token, token => token.user)
   tokens!: Token[]  

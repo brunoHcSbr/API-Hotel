@@ -1,10 +1,9 @@
 {
-  "name": "workshop-node-ts-intro",
+  "name": "API Hotel",
   "version": "1.0.0",
   "description": "api rest",
   "main": "index.js",
-  "repository": "https://github.com/felipez3r0/workshop-node-ts-intro.git",
-  "author": "Felipe do E. Santo <felipez3r0@gmail.com>",
+  "author": "Bruno, Lorena, Matheus, Pedro, Wesley",
   "license": "MIT",
   "dependencies": {
     "@types/bcrypt": "^5.0.1",

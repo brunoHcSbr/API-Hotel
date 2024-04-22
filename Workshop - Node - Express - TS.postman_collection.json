@@ -1,13 +1,13 @@
 {
 	"info": {
 		"_postman_id": "3876d79f-e882-4ab5-84a7-a9237d568fd3",
-		"name": "Workshop - Node / Express / TS",
+		"name": "Primeiro cadastro",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "26203921"
 	},
 	"item": [
 		{
-			"name": "Add task",
+			"name": "Add room",
 			"request": {
 				"auth": {
 					"type": "apikey",
@@ -28,7 +28,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"title\": \"Tarefa 1\"\n}",
+					"raw": "{\n    \"toWalk\": \"Quarto n° 1\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -36,19 +36,19 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/task",
+					"raw": "{{HOST}}/room",
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
-						"task"
+						"room"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get all tasks",
+			"name": "Get all room",
 			"request": {
 				"auth": {
 					"type": "apikey",
@@ -68,19 +68,19 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/task",
+					"raw": "{{HOST}}/room",
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
-						"task"
+						"room"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get task by Id",
+			"name": "Get room by Id",
 			"request": {
 				"auth": {
 					"type": "apikey",
@@ -100,12 +100,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/task/1",
+					"raw": "{{HOST}}/room/1",
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
-						"task",
+						"room",
 						"1"
 					]
 				}
@@ -113,7 +113,7 @@
 			"response": []
 		},
 		{
-			"name": "Delete task",
+			"name": "Delete room",
 			"request": {
 				"auth": {
 					"type": "apikey",
@@ -133,12 +133,12 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/task/1",
+					"raw": "{{HOST}}/room/1",
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
-						"task",
+						"room",
 						"1"
 					]
 				}
@@ -146,7 +146,7 @@
 			"response": []
 		},
 		{
-			"name": "Update task",
+			"name": "Update room",
 			"request": {
 				"auth": {
 					"type": "apikey",
@@ -167,7 +167,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"title\": \"Tarefa editada 2\"\n}",
+					"raw": "{\n    \"toWalk\": \"Quarto editado\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -175,12 +175,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{HOST}}/task/1",
+					"raw": "{{HOST}}/room/1",
 					"host": [
 						"{{HOST}}"
 					],
 					"path": [
-						"task",
+						"room",
 						"1"
 					]
 				}
@@ -188,13 +188,14 @@
 			"response": []
 		},
 		{
+			
 			"name": "Register",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"User1\",\n    \"email\": \"meuemail@email.com.br\",\n    \"password\": \"senha1234\"\n}",
+					"raw": "{\n    \"name\": \"User1\",\n    \"userNick\": \"admin\",\n    \"job\": \"Funcionario\",\n    \"password\": \"admin\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -221,7 +222,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"meuemail@email.com.br\",\n    \"password\": \"senha1234\"\n}",
+					"raw": "{\n    \"userNick\": \"admin\",\n    \"password\": \"admin\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
